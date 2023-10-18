@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/TopNavBar.scss";
 
 const TopNavBar = () => {
   return (
