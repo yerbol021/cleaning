@@ -13,3 +13,17 @@
     
     padding: 5px; 
 }
+
+.bars3 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.bars3 svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
