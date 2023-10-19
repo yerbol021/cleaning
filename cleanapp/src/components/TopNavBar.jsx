@@ -9,8 +9,8 @@ const TopNavBar = () => {
         <img src={logo} alt="Logo" />
       </div>
       <div className="about">About</div>
-      <div className="services">services</div>
-      <div className="contact">contact</div>
+      <div className="services">Services</div>
+      <div className="contact">Contact us</div>
     </nav>
   );
 };
