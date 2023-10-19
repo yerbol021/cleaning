@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/TopNavBar.scss";
-import logo from "../images/Logo.png";
+import logo from "../images/coolday.png";
 
 const TopNavBar = () => {
   return (
