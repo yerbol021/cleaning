@@ -5,7 +5,7 @@ import logo from "../images/coolday.png";
 const TopNavBar = () => {
   return (
     <nav className="navbar">
-      <a href="/" className="about">
+      <a href="/" className="brand-name">
         <div className="navbar-logo">
           <img src={logo} alt="Logo" />
         </div>
