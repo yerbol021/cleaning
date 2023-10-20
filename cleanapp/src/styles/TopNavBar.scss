@@ -1,5 +1,5 @@
 .navbar {
-  height: 60px;
+  height: 110px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -10,33 +10,13 @@
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 }
 
-.navbar-logo img {
-    float: left;
-    display: inline-block;
-    
-    padding: 5px; 
-}
-/*
-.bars3 {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
-}
-
-.bars3 svg {
-  width: 24px;
-  height: 24px;
-  fill: white;
-}
-*/
-
 .brand-name {
   text-decoration: none;
-  color: black;
-  font-size: 1.3rem;
-  margin-left: 1rem;
+  //margin-left: 1rem;
+  float: left;
+  display: inline-block;
+  padding: 5px; 
+  
 }
 
 .bars3 {
@@ -76,4 +56,16 @@
   text-decoration: none;
   display: block;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .bars3 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-menu ul {
+    display: none;
+  }
 }
