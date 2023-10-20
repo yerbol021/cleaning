@@ -1,5 +1,5 @@
 .navbar {
-  height: 110px;
+  height: 60px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -16,7 +16,11 @@
   float: left;
   display: inline-block;
   padding: 5px; 
-  
+}
+
+.logo-image {
+  width: 100%; 
+  height: 60px; 
 }
 
 .bars3 {
@@ -67,5 +71,43 @@
 @media screen and (max-width: 768px) {
   .navigation-menu ul {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-menu ul {
+    // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar)
+    position: absolute;
+    top: 60px;
+    left: 0;
+    // stacks the li tags vertically 
+    flex-direction: column;
+   // makes menu span full height and width
+    width: 100%;
+    height: calc(100vh - 77px);
+    color: red;
+    background-color: white;
+    border-top: 1px solid black;
+    display: none;
+  }
+  .navigation-menu li {
+    // centers link text and strips off margin
+    text-align: center;
+    margin: 0;
+  }
+  .navigation-menu li a {
+    color: black;
+    // increases the surface area of the anchor tag to span the full width of the menu
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .navigation-menu li:hover {
+    background-color: #eee;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-menu.expanded ul {
+    display: block;
   }
 }

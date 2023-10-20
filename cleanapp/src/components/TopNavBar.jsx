@@ -1,16 +1,23 @@
 import React from "react";
+import { useState } from "react";
 import "../styles/TopNavBar.scss";
 import logo from "../images/coolday.png";
 
 const TopNavBar = () => {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <nav className="navbar">
       <a href="/" className="brand-name">
         <div className="navbar-logo">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" className="logo-image"/>
         </div>
       </a>
-      <button className="bars3">
+      <button
+        className="bars3"
+        onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -26,7 +33,11 @@ const TopNavBar = () => {
           />
         </svg>
       </button>
-      <div className="navigation-menu">
+      <div
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      >
         <ul>
           <li>
             <a href="/home">Home</a>
